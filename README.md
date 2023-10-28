@@ -21,15 +21,11 @@ https://user-images.githubusercontent.com/106020512/235429801-e8b8dae2-c1ad-4e23
 
 ### Installation
 
-> **Warning**
->
-> When you installing rustup, select nightly version othervise you wont be able to build pacakge
-> Also if you have nvidia gpu, go to Hyprland nvidia page and aplay sugestions For more details, please refer [Hyprland Nvidia](https://wiki.hyprland.org/Nvidia/) 
    
 
 After minimal (or any other) Debian install (with grub), clone and execute -
 ```shell
-sudo apt install git
+sudo dnf install git
 git clone https://github.com/Senshi111/fedora-hyprland-hyprdots.git
 cd ~/debian-hyprland-hyprdots/build-hyprland-and-apps
 ./install_all.sh
@@ -43,7 +39,7 @@ cd ~/debian-hyprland-hyprdots/Theme/Scripts
 >
 > If you dont have pyamdgpuinfo installed
 ```shell
-sudo apt install python3-pip
+sudo dnf install python3-pip
 pip install pyamdgpuinfo
 ```
 > if you got an  #error: externally-managed-environment
