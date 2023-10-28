@@ -1,7 +1,7 @@
 # All the thems i took from prasanthrangan
 > **Note**
 >
-> thanks to prasanthrangan's work, I only took his themes and modified the scripts so that they could work in debian
+> thanks to prasanthrangan's work, I only took his themes and modified the scripts so that they could work in fedora
 >[prasanthrangan github page](https://github.com/prasanthrangan/hyprdots) 
 
 
@@ -16,7 +16,7 @@
     
 
 
-## My Debian Sid Hyprland Config
+## My Fedora rawhide Hyprland Config
 https://user-images.githubusercontent.com/106020512/235429801-e8b8dae2-c1ad-4e23-9aa2-b1edb6cabe99.mp4
 
 | <!-- --> | <!-- --> |
