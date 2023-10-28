@@ -9,13 +9,7 @@
 
 # --// Hyprdots //--
 
-
-<p align="center">
-  <img width="250" src="https://github-production-user-asset-6210df.s3.amazonaws.com/40372242/263763138-8254e6be-9537-4388-90f8-c418124c8284.png">
-</p>
     
-
-
 ## My Fedora rawhide Hyprland Config
 https://user-images.githubusercontent.com/106020512/235429801-e8b8dae2-c1ad-4e23-9aa2-b1edb6cabe99.mp4
 
@@ -36,7 +30,7 @@ https://user-images.githubusercontent.com/106020512/235429801-e8b8dae2-c1ad-4e23
 After minimal (or any other) Debian install (with grub), clone and execute -
 ```shell
 sudo apt install git
-git clone https://github.com/Senshi111/debian-hyprland-hyprdots.git
+git clone https://github.com/Senshi111/fedora-hyprland-hyprdots.git
 cd ~/debian-hyprland-hyprdots/build-hyprland-and-apps
 ./install_all.sh
 
