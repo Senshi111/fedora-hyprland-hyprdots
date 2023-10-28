@@ -23,7 +23,7 @@ https://user-images.githubusercontent.com/106020512/235429801-e8b8dae2-c1ad-4e23
 
    
 
-After minimal (or any other) Debian install (with grub), clone and execute -
+After minimal (or any other) Fedora install (with grub), clone and execute -
 ```shell
 sudo dnf install git
 git clone https://github.com/Senshi111/fedora-hyprland-hyprdots.git
