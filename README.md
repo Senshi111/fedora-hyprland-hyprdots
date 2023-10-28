@@ -27,10 +27,10 @@ After minimal (or any other) Fedora install (with grub), clone and execute -
 ```shell
 sudo dnf install git
 git clone https://github.com/Senshi111/fedora-hyprland-hyprdots.git
-cd ~/debian-hyprland-hyprdots/build-hyprland-and-apps
+cd ~/fedora-hyprland-hyprdots/build-hyprland-and-apps
 ./install_all.sh
 
-cd ~/debian-hyprland-hyprdots/Theme/Scripts
+cd ~/fedora-hyprland-hyprdots/Theme/Scripts
 ./install.sh
 
 ```
