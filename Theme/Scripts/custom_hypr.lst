@@ -1,8 +1,6 @@
 pipewire
 wireplumber
 network-manager-applet
-bluez
-blueman
 brightnessctl
 qt6-qtwayland
 dunst
