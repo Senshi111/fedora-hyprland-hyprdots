@@ -44,10 +44,6 @@ EOF
     # Add Nvidia drivers to the list
     if nvidia_detect; then
         # Adjust the logic for Fedora kernel headers and package names.
-        sudo dnf install -y \
-            https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
-        sudo dnf install -y \
-            https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
         sudo dnf install -y kernel-headers-$(uname -r)
         sudo dnf install -y akmod-nvidia
     else
