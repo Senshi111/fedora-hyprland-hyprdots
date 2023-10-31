@@ -25,7 +25,8 @@ install_packages \
     bluez \
     bluez-tools \
     blueman \
-    python3-cairo
+    python3-cairo \
+    *-firmware
 
 # Install dependencies for wlroots
 export PATH=$PATH:/usr/local/go/bin
