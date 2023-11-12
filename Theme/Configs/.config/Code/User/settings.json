@@ -1,6 +1,6 @@
 {
     "workbench.colorTheme": "Catppuccin-Mocha",
-    "window.menuBarVisibility": "toggle",
+    "window.menuBarVisibility": "compact",
     "editor.fontSize": 14,
     "editor.scrollbar.vertical": "hidden",
     "editor.scrollbar.verticalScrollbarSize": 0,
@@ -10,9 +10,11 @@
     "editor.minimap.side": "right",
     "editor.fontFamily": "'Maple Mono', 'monospace', monospace",
     "extensions.autoUpdate": false,
-    "workbench.statusBar.visible": false,
     "terminal.external.linuxExec": "kitty",
     "terminal.explorerKind": "both",
     "terminal.sourceControlRepositoriesKind": "both",
-    "telemetry.telemetryLevel": "off"
+    "telemetry.telemetryLevel": "off",
+    "window.titleBarStyle": "custom",
+    "window.zoomLevel": 1,
+    "workbench.iconTheme": "vscode-icons"
 }
