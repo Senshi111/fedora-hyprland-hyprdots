@@ -9,6 +9,7 @@
 
 # --// Hyprdots //--
 
+### location of dots file is [here](https://github.com/Senshi111/hyprland-hyprdots-files.git) 
     
 ## My Fedora rawhide Hyprland Config
 https://user-images.githubusercontent.com/106020512/235429801-e8b8dae2-c1ad-4e23-9aa2-b1edb6cabe99.mp4
@@ -42,14 +43,6 @@ pip install pyamdgpuinfo
 ```shell
 sudo mv /usr/lib/python3.11/EXTERNALLY-MANAGED /usr/lib/python3.11/EXTERNALLY-MANAGED.old
 ```
-
-
-> **Note**
->
-> You can also create your own list (for ex. `custom_apps.lst`) with all your favorite apps and pass the file as a parameter to install it -
->```shell
->./install.sh custom_apps.lst
->```
 
 Please reboot after the install script completes and takes you to sddm login screen (or black screen) for the first time.   
 For more details, please refer [installation.md](https://github.com/prasanthrangan/hyprdots/blob/main/installation.md)
