@@ -9,8 +9,9 @@ Rofilaunch="$HOME/.config/rofi/config.rasi"
 
 
 # scale for monitor x res
-x_monres=`cat /sys/class/drm/*/modes | head -1 | cut -d 'x' -f 1`
-x_monres=$(( x_monres*18/100 ))
+x_monres=$(hyprctl -j monitors | jq '.[] | select(.focused==true) | .width')
+monitor_scale=$(hyprctl -j monitors | jq '.[] | select (.focused == true) | .scale' | sed 's/\.//')
+x_monres=$(( x_monres * 18 / monitor_scale ))
 
 
 # set rofi override
@@ -29,6 +30,6 @@ done | rofi -dmenu -theme-str "${r_override}" -config $RofiConf)
 # apply rofi style
 if [ ! -z $RofiSel ] ; then
     cp $RofiStyle/$RofiSel.rasi $Rofilaunch
-    dunstify $ncolor "theme" -a " ${RofiSel} applied..." -i "$RofiStyle/$RofiSel.png" -r 91190 -t 2200
+    dunstify "t1" -a " ${RofiSel} applied..." -i "$RofiStyle/$RofiSel.png" -r 91190 -t 2200
 fi
 

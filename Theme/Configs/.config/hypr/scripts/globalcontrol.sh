@@ -3,7 +3,8 @@
 # wallpaper var
 EnableWallDcol=0
 ConfDir="$HOME/.config"
-ThemeCtl="$ConfDir/swww/wall.ctl"
+CloneDir="$HOME/Hyprdots"
+ThemeCtl="$ConfDir/hypr/theme.ctl"
 cacheDir="$ConfDir/swww/.cache"
 
 # theme var
@@ -15,11 +16,11 @@ hypr_border=`hyprctl -j getoption decoration:rounding | jq '.int'`
 hypr_width=`hyprctl -j getoption general:border_size | jq '.int'`
 
 # notification var
-ncolor="-h string:bgcolor:#191724 -h string:fgcolor:#faf4ed -h string:frcolor:#56526e"
-
-if [ "${gtkMode}" == "light" ] ; then
-    ncolor="-h string:bgcolor:#f4ede8 -h string:fgcolor:#9893a5 -h string:frcolor:#908caa"
-fi
+#ncolor="-h string:bgcolor:#191724 -h string:fgcolor:#faf4ed -h string:frcolor:#56526e"
+#
+#if [ "${gtkMode}" == "light" ] ; then
+#    ncolor="-h string:bgcolor:#f4ede8 -h string:fgcolor:#9893a5 -h string:frcolor:#908caa"
+#fi
 
 # pacman fns
 pkg_installed()
@@ -46,4 +47,3 @@ get_aurhlpr()
         aurhlpr="paru"
     fi
 }
-

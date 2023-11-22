@@ -20,41 +20,6 @@ show_banner() {
 EOF
 }
 
-# Function to install packages
-install_packages() {
-    cat << "EOF"
-
- _         _       _ _ _
-|_|___ ___| |_ ___| | |_|___ ___
-| |   |_ -|  iclecc.md |  | . |
-|_|_|_|___|_| |__,|_|_|_|_|_|_  |
-                            |___|
-
-EOF
-
-    # Prepare package list
-    shift $((OPTIND - 1))
-    cust_pkg=$1
-    cp custom_hypr.lst install_pkg.lst
-
-    if [ -f "$cust_pkg" ] && [ ! -z "$cust_pkg" ]; then
-        cat "$cust_pkg" >> install_pkg.lst
-    fi
-
-    # Add Nvidia drivers to the list
-    if nvidia_detect; then
-        # Adjust the logic for Fedora kernel headers and package names.
-        sudo dnf install -y kernel-headers-$(uname -r)
-        sudo dnf install -y akmod-nvidia
-    else
-        echo "Nvidia card not detected, skipping Nvidia drivers..."
-    fi
-
-    # Install packages from the list
-    sudo dnf install -y $(cat install_pkg.lst)
-    rm install_pkg.lst
-}
-
 # Function to restore custom configurations
 restore_configs() {
     cat << "EOF"
@@ -106,15 +71,11 @@ if [ $? -ne 0 ]; then
 fi
 
 # Evaluate options
-flg_Install=0
 flg_Restore=0
 flg_Service=0
 
 while getopts "idrs" RunStep; do
     case $RunStep in
-    i) flg_Install=1 ;;
-    d) flg_Install=1
-        export use_default="--assumeyes" ;;  # Change this flag for Fedora package manager
     r) flg_Restore=1 ;;
     s) flg_Service=1 ;;
     *) echo "...valid options are..."
@@ -131,10 +92,6 @@ if [ $OPTIND -eq 1 ]; then
     flg_Service=1
 fi
 
-# Perform actions based on the options
-if [ $flg_Install -eq 1 ]; then
-    install_packages
-fi
 
 if [ $flg_Restore -eq 1 ]; then
     restore_configs

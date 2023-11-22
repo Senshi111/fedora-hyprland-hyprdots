@@ -1,5 +1,5 @@
     "hyprland/window": {
-        "format": " 🕵🏼 {}",
+        "format": "  {}",
         "separate-outputs": true,
         "rewrite": {
             "${USER}@${set_sysname}:(.*)": "$1 ",
@@ -10,6 +10,7 @@
             "(.*) — Dolphin": "$1 󰉋",
             "(.*)Spotify": "Spotify 󰓇",
             "(.*)Steam": "Steam 󰓓"
-        }
+        },
+        "max-length": 1000
     },
 
