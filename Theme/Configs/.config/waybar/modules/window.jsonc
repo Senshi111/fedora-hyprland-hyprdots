@@ -1,5 +1,5 @@
     "hyprland/window": {
-        "format": "  {}",
+        "format": " ƒ {}",
         "separate-outputs": true,
         "rewrite": {
             "${USER}@${set_sysname}:(.*)": "$1 ",
