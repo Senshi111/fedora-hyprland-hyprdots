@@ -29,10 +29,6 @@ sudo dnf install git
 git clone https://github.com/Senshi111/fedora-hyprland-hyprdots.git
 cd ~/fedora-hyprland-hyprdots/build-hyprland-and-apps
 ./install_all.sh
-
-cd ~/fedora-hyprland-hyprdots/Theme/Scripts
-./install.sh
-
 ```
 
 > **Warning**
