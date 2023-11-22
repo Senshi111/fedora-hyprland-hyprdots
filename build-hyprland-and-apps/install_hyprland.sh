@@ -13,8 +13,10 @@ nvidia_detected() {
 sudo dnf copr enable -y solopasha/hyprland
 
 if nvidia_detected; then
-    # Install hyprland-nvidia-git automatically if an NVIDIA GPU is detected
+    # Install hyprland-nvidia-git and nvidia automatically if an NVIDIA GPU is detected
+    sudo dnf install -y akmod-nvidia
     sudo dnf install -y hyprland-nvidia-git
+    
 else
     # Install hyprland-git automatically if no NVIDIA GPU is detected
     sudo dnf install -y hyprland-git
