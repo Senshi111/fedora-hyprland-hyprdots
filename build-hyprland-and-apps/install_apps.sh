@@ -9,7 +9,7 @@ install_packages() {
 
 # Install required packages
 install_packages \
-    pipewire \         
+    pipewire \
     wireplumber \
     network-manager-applet \
     brightnessctl \
@@ -30,4 +30,4 @@ install_packages \
     qt6-qtbase \
     kvantum \
     qt5ct \
-    waybar \
+    waybar
