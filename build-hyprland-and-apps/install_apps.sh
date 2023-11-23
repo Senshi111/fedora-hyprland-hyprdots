@@ -30,4 +30,5 @@ install_packages \
     qt6-qtbase \
     kvantum \
     qt5ct \
-    waybar
+    waybar \
+    parallel
