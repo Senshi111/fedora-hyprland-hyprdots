@@ -31,4 +31,5 @@ install_packages \
     kvantum \
     qt5ct \
     waybar \
-    parallel
+    parallel \
+    grimblast
