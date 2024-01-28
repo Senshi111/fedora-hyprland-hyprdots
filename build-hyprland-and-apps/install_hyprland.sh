@@ -17,8 +17,7 @@ if nvidia_detected; then
     sudo dnf install -y akmod-nvidia
    
 fi
-sudo dnf install -y hyprland-git 
+sudo dnf install -y hyprland-git cliphist xdg-desktop-portal-hyprland swww
 
-    sudo dnf install -y xdg-desktop-portal-hyprland
 # Return to the previous directory
 cd ..
