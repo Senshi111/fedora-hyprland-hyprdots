@@ -31,10 +31,10 @@ install_packages \
 export PATH=$PATH:/usr/local/go/bin
 
 # Enable COPR repository for additional packages
-sudo dnf copr enable -y alebastr/sway-extras
+#sudo dnf copr enable -y alebastr/sway-extras
 
 # Install the additional package
-sudo dnf install -y swww
+#sudo dnf install -y swww
 
 sudo dnf install -y \
             https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
