@@ -35,4 +35,5 @@ install_packages \
     parallel \
     grimblast \
     dolphin \
-    sddm
+    sddm \
+    parallel 
