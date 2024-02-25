@@ -29,7 +29,8 @@ install_packages \
     python3-cairo \
     iwl* \
     lm_sensors \
-    cava
+    cava \
+    polkit-qt6-1
 
 # Install dependencies for wlroots
 export PATH=$PATH:/usr/local/go/bin
