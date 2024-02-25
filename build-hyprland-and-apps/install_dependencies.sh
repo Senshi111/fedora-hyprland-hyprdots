@@ -27,7 +27,8 @@ install_packages \
     bluez-tools \
     blueman \
     python3-cairo \
-    iwl*
+    iwl* \
+    lm_sensors
 
 # Install dependencies for wlroots
 export PATH=$PATH:/usr/local/go/bin
