@@ -36,4 +36,5 @@ install_packages \
     grimblast \
     dolphin \
     sddm \
-    parallel 
+    parallel \
+    firefox
