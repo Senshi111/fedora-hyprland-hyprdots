@@ -19,6 +19,7 @@ install_packages \
     python-cairo \
     alsa-ucm \
     alsa-firmware \
+    alsa-sof-firmware \
     google-noto-emoji-fonts \
     google-noto-emoji-color-fonts \
     pamixer \
