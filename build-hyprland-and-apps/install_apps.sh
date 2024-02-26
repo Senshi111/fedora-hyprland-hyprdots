@@ -37,4 +37,5 @@ install_packages \
     dolphin \
     sddm \
     parallel \
-    firefox
+    firefox \
+    kde-cli-tools
