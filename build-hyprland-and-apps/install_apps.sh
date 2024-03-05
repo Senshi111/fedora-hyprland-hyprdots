@@ -33,9 +33,7 @@ install_packages \
     qt6ct \
     waybar \
     parallel \
-    grimblast \
     dolphin \
     sddm \
-    parallel \
     firefox \
     kde-cli-tools
