@@ -30,7 +30,9 @@ install_packages \
     iwl* \
     lm_sensors \
     cava \
-    polkit-qt6-1
+    polkit-qt6-1 \
+    lsd \
+    neofetch
 
 # Install dependencies for wlroots
 export PATH=$PATH:/usr/local/go/bin
