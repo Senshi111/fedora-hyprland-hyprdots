@@ -36,4 +36,5 @@ install_packages \
     dolphin \
     sddm \
     firefox \
-    kde-cli-tools
+    kde-cli-tools \
+    fastfetch
