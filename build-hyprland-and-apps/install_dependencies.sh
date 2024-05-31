@@ -27,6 +27,7 @@ install_packages \
     bluez-tools \
     blueman \
     python3-cairo \
+    NetworkManager-wifi \
     iwl* \
     lm_sensors \
     cava \
