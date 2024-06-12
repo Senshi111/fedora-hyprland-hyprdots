@@ -15,7 +15,7 @@ install_packages \
     brightnessctl \
     qt6-qtwayland \
     dunst \
-    rofi \
+    rofi-wayland \
     swayidle \
     wlogout \
     grim \
