@@ -33,7 +33,8 @@ install_packages \
     cava \
     polkit-qt6-1 \
     lsd \
-    neofetch
+    neofetch \
+    grimblast
 
 # Install dependencies for wlroots
 export PATH=$PATH:/usr/local/go/bin
